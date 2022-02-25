@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.0 on darwin)" generated="20220223 23:23:29.145" rpa="false" schemaversion="2">
+<suite id="s1" name="Resources" source="/Users/andikaprananto/PycharmProjects/Automation/Resources">
+<suite id="s1-s1" name="DDT" source="/Users/andikaprananto/PycharmProjects/Automation/Resources/DDT.robot">
+<kw name="Opening My Browser" library="Resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220223 23:23:29.765" level="INFO">Opening browser 'chrome' to base url 'https://katalog.nurinnia.co.id/admin/'.</msg>
+<status status="PASS" starttime="20220223 23:23:29.764" endtime="20220223 23:23:36.475"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220223 23:23:36.475" endtime="20220223 23:23:36.620"/>
+</kw>
+<status status="PASS" starttime="20220223 23:23:29.764" endtime="20220223 23:23:36.620"/>
+</kw>
+<test id="s1-s1-t1" name="Login Valid">
+<kw name="Login Invalid">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@type='text']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 23:23:36.623" level="INFO">Typing text 'nurinnia' into text field 'xpath=//input[@type='text']'.</msg>
+<status status="PASS" starttime="20220223 23:23:36.622" endtime="20220223 23:23:36.831"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@type='password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 23:23:36.832" level="INFO">Typing text 'Farrel110614' into text field 'xpath=//input[@type='password']'.</msg>
+<status status="PASS" starttime="20220223 23:23:36.831" endtime="20220223 23:23:36.943"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//input[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220223 23:23:36.945" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
+<status status="PASS" starttime="20220223 23:23:36.944" endtime="20220223 23:23:37.254"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[contains(text(),'PRODUCT AREA')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220223 23:23:37.255" level="INFO">Clicking element 'xpath=//span[contains(text(),'PRODUCT AREA')]'.</msg>
+<status status="PASS" starttime="20220223 23:23:37.254" endtime="20220223 23:23:37.325"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),'DATA PRODUCT')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220223 23:23:37.325" endtime="20220223 23:23:37.355"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),'DATA PRODUCT')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220223 23:23:37.356" level="INFO">Clicking element 'xpath=//a[contains(text(),'DATA PRODUCT')]'.</msg>
+<status status="PASS" starttime="20220223 23:23:37.355" endtime="20220223 23:23:42.818"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//a[@class='icon-btn pulse-grow']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220223 23:23:42.819" endtime="20220223 23:23:42.866"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//a[@class='icon-btn pulse-grow']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220223 23:23:42.866" level="INFO">Clicking element 'xpath=//a[@class='icon-btn pulse-grow']'.</msg>
+<status status="PASS" starttime="20220223 23:23:42.866" endtime="20220223 23:23:42.954"/>
+</kw>
+<status status="PASS" starttime="20220223 23:23:36.622" endtime="20220223 23:23:42.955"/>
+</kw>
+<status status="PASS" starttime="20220223 23:23:36.621" endtime="20220223 23:23:42.955"/>
+</test>
+<status status="PASS" starttime="20220223 23:23:29.189" endtime="20220223 23:23:42.969"/>
+</suite>
+<suite id="s1-s2" name="DDT2" source="/Users/andikaprananto/PycharmProjects/Automation/Resources/DDT2.robot">
+<kw name="Opening My Browser" library="Resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220223 23:23:52.759" level="INFO">Opening browser 'chrome' to base url 'https://katalog.nurinnia.co.id/admin/'.</msg>
+<status status="PASS" starttime="20220223 23:23:52.758" endtime="20220223 23:23:56.901"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220223 23:23:56.902" endtime="20220223 23:23:57.050"/>
+</kw>
+<status status="PASS" starttime="20220223 23:23:52.758" endtime="20220223 23:23:57.051"/>
+</kw>
+<test id="s1-s2-t1" name="LoginTestUsingExcel using AAA 123123123 2153453 2134 X 32423 X 2342  140 Set 1">
+<kw name="InputData">
+<arg>AAA</arg>
+<arg>123123123</arg>
+<arg>2153453</arg>
+<arg>2134 X 32423 X 2342 </arg>
+<arg>140</arg>
+<arg>Set</arg>
+<arg>1</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="judul"]</arg>
+<arg>${product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 23:23:57.055" level="INFO">Typing text 'AAA' into text field 'xpath=//*[@id="judul"]'.</msg>
+<msg timestamp="20220223 23:23:57.234" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220223 23:23:57.241" level="FAIL">Element with locator 'xpath=//*[@id="judul"]' not found.</msg>
+<status status="FAIL" starttime="20220223 23:23:57.054" endtime="20220223 23:23:57.241"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="harga"]</arg>
+<arg>${jabodetabek}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220223 23:23:57.241" endtime="20220223 23:23:57.241"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="harga1"]</arg>
+<arg>${jateng}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220223 23:23:57.241" endtime="20220223 23:23:57.242"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="tipeukuran"] ${ukuran}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220223 23:23:57.242" endtime="20220223 23:23:57.242"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="stok"]</arg>
+<arg>${stcok}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220223 23:23:57.242" endtime="20220223 23:23:57.242"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="pengarang"]</arg>
+<arg>${satuan}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220223 23:23:57.242" endtime="20220223 23:23:57.242"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="penerbit"]</arg>
+<arg>${qty}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220223 23:23:57.242" endtime="20220223 23:23:57.242"/>
+</kw>
+<status status="FAIL" starttime="20220223 23:23:57.054" endtime="20220223 23:23:57.243"/>
+</kw>
+<status status="FAIL" starttime="20220223 23:23:57.051" endtime="20220223 23:23:57.243">Element with locator 'xpath=//*[@id="judul"]' not found.</status>
+</test>
+<kw name="Closing My Browser" library="Resources" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220223 23:23:57.246" endtime="20220223 23:23:57.381"/>
+</kw>
+<status status="PASS" starttime="20220223 23:23:57.245" endtime="20220223 23:23:57.382"/>
+</kw>
+<status status="FAIL" starttime="20220223 23:23:42.971" endtime="20220223 23:23:57.382"/>
+</suite>
+<status status="FAIL" starttime="20220223 23:23:29.149" endtime="20220223 23:23:57.384"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Resources">Resources</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="DDT">Resources.DDT</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="DDT2">Resources.DDT2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
